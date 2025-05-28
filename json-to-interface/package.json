@@ -1,0 +1,19 @@
+{
+  "name": "json-to-interface",
+  "version": "1.0.0",
+  "description": "CLI tool to generate TypeScript interfaces from JSON files",
+  "main": "src/main.ts",
+  "scripts": {
+    "dev": "deno task dev",
+    "build": "deno task build",
+    "format": "deno task format",
+    "lint": "deno task lint"
+  },
+  "keywords": ["json", "typescript", "interface", "cli", "deno"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "^1.4.1"
+  },
+  "packageManager": "yarn@1.22.19"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "田中太郎",
+  "age": 30,
+  "isActive": true,
+  "email": "tanaka@example.com",
+  "address": {
+    "street": "東京都渋谷区",
+    "zipCode": "150-0001",
+    "coordinates": {
+      "lat": 35.6762,
+      "lng": 139.6503
+    }
+  },
+  "hobbies": ["読書", "映画鑑賞", "プログラミング"],
+  "scores": [85, 92, 78, 96],
+  "metadata": {
+    "createdAt": "2024-01-15T10:30:00Z",
+    "updatedAt": "2024-01-20T15:45:00Z",
+    "version": 1
+  },
+  "tags": [],
+  "preferences": {
+    "theme": "dark",
+    "language": "ja",
+    "notifications": {
+      "email": true,
+      "push": false,
+      "sms": null
+    }
+  }
+}
