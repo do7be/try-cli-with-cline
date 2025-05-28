@@ -111,6 +111,15 @@ deno task dev examples/sample.json
 yarn dev examples/sample.json
 ```
 
+### テスト
+
+```bash
+# テストを実行
+deno task test
+# または
+yarn test
+```
+
 ## 対応する型
 
 - **string**: 文字列

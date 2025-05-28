@@ -7,7 +7,8 @@
     "dev": "deno task dev",
     "build": "deno task build",
     "format": "deno task format",
-    "lint": "deno task lint"
+    "lint": "deno task lint",
+    "test": "deno task test"
   },
   "keywords": ["json", "typescript", "interface", "cli", "deno"],
   "author": "",

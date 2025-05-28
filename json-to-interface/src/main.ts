@@ -6,12 +6,8 @@ async function main() {
   const args = Deno.args;
 
   if (args.length === 0) {
-    console.error(
-      "使用方法: deno run --allow-read --allow-write src/main.ts <JSONファイルのパス>"
-    );
-    console.error(
-      "例: deno run --allow-read --allow-write src/main.ts ./data.json"
-    );
+    console.error("使用方法: deno run --allow-read --allow-write src/main.ts <JSONファイルのパス>");
+    console.error("例: deno run --allow-read --allow-write src/main.ts ./data.json");
     Deno.exit(1);
   }
 
@@ -28,10 +24,7 @@ async function main() {
 
     // InterfaceGeneratorを使用してTypeScriptのinterfaceを生成
     const generator = new InterfaceGenerator();
-    const interfaceContent = generator.generateFromJson(
-      jsonData,
-      interfaceName
-    );
+    const interfaceContent = generator.generateFromJson(jsonData, interfaceName);
 
     // 出力ファイル名を生成
     const outputFileName = `${fileName}-type.ts`;
@@ -45,6 +38,7 @@ async function main() {
     console.log("─".repeat(50));
     console.log(interfaceContent);
     console.log("─".repeat(50));
+
   } catch (error) {
     if (error instanceof Deno.errors.NotFound) {
       console.error(`❌ エラー: ファイルが見つかりません: ${inputPath}`);

@@ -7,6 +7,7 @@
   "tasks": {
     "dev": "deno run --allow-read --allow-write src/main.ts",
     "build": "deno compile --allow-read --allow-write --output bin/json-to-interface src/main.ts",
+    "test": "deno test --allow-read tests/",
     "format": "biome format --write .",
     "lint": "biome lint ."
   },
